@@ -12,6 +12,7 @@ router.get('/details', (req,res) => {
 })
 
 app.use('/', router);
+
 app.listen(3000, () => {
   console.log(`Server is running at http://localhost:3000`);
 });
