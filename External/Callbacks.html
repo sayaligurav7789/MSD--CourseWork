@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Example</title>
+</head>
+<body>
+
+    <script>
+        function add(a, b, display){
+            setTimeout(() => {
+                let sum = a + b;
+                display(sum);
+            }, 2000);
+        }
+
+        function display(sum) {
+            console.log("Sum: ", sum);
+        }
+
+        let a = Number(prompt("Enter first number: "));
+        let b = Number(prompt("Enter second number: "));
+
+        add(a, b, display);
+
+        console.log("Program Ended!");
+    </script>
+
+</body>
+</html>
